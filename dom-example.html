@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Мой первый DOM-прект</title>
+    </head>
+<body>
+    <h1 id="greeting">Привет, мир!</h1>
+    <button id="changeButton">Изменить текст</button>
+
+    <script>
+        //Получаем элементы 
+        let greetingElement = document.getElementById("greeting");
+        let buttonElement = document.getElementById("changeButton");
+
+        //добавляем обработчик клика
+        buttonElement.addEventListener("click", function() {
+            greetingElement.textContent = "Ты нажал кнопку!";
+            greetingElement.style.color = "blue";
+        });
+    </script>
+</body>
+</html>
